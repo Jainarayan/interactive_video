@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Interactive video Sample</title>
+<script type="text/javascript">
+  
+window.onload =  function(){
+		document.getElementById("Video1").src ="start.mp4";
+		
+	}
+	function play_video(){
+		var video = document.getElementById("Video1");	
+		  video.play();
+	}
+	function pause_video(){
+		var video = document.getElementById("Video1");	
+		  video.pause();
+	}
+	
+	   
+window.setTimeout("enterframe()", 1);
+
+function enterframe() {
+window.setTimeout("enterframe()", 1);
+
+  var video = document.getElementById("Video1");
+  var current = video.currentTime;
+
+	if(current.toFixed(0) == 12){
+		document.getElementById("pause_id").style.display = "block";
+		      video.pause();
+			  document.getElementById("trick1").style.display = "block";
+			  document.getElementById("trick2").style.display = "block";
+			  document.getElementById("trick3").style.display = "block";
+			  
+         }
+ 
+ 
+ 
+	   if(current.toFixed(0) == 21){
+		   document.getElementById("pause_id").style.display = "block";
+		   video.pause();
+			 document.getElementById("try").style.display = "block";
+			 
+	   }
+	   
+	   if(current.toFixed(0) == 26){
+		  document.getElementById("pause_id").style.display = "block";
+		   video.pause();
+			document.getElementById("try").style.display = "block";
+			
+	   }
+	///////////////////////////////////////////////////
+	
+	if(current.toFixed(0) == 67){
+		document.getElementById("pause_id").style.display = "block";
+		       video.pause();
+			  document.getElementById("trick4").style.display = "block";
+			  document.getElementById("trick5").style.display = "block";
+			  document.getElementById("trick6").style.display = "block";
+			   document.getElementById("trick7").style.display = "block";
+			   
+         }
+		 
+		  if(current.toFixed(1) == 74.2){
+			  document.getElementById("pause_id").style.display = "block";
+		   video.pause();
+			document.getElementById("try2").style.display = "block";
+			
+	   }
+	
+	if(current.toFixed(1) == 80.5){
+		document.getElementById("pause_id").style.display = "block";
+		   video.pause();
+			document.getElementById("try2").style.display = "block";
+			
+	   }
+	if(current.toFixed(0) == 86){
+		    document.getElementById("pause_id").style.display = "block";
+		   video.pause();
+			document.getElementById("try2").style.display = "block";
+			
+	   }
+	
+	////////////////////////////
+	   
+	 if (video.paused) {
+		 document.getElementById("play_id").style.display = "block";  
+       // document.getElementById("pause_id").style.display = "none";
+    }
+    else {
+		document.getElementById("play_id").style.display = "none";
+      // document.getElementById("pause_id").style.display = "block";
+      }
+
+  }
+	   
+	    function trick1() {
+			document.getElementById("pause_id").style.display = "none";
+		  document.getElementById("trick1").style.display = "none";
+	      document.getElementById("trick2").style.display = "none";
+	      document.getElementById("trick3").style.display = "none";
+		   var video = document.getElementById("Video1");
+		  video.currentTime = 14;
+		  video.play();
+		
+         }
+		 function trick2() {
+          document.getElementById("pause_id").style.display = "none";
+		  document.getElementById("trick1").style.display = "none";
+	      document.getElementById("trick2").style.display = "none";
+	      document.getElementById("trick3").style.display = "none";
+		  var video = document.getElementById("Video1");
+		  video.currentTime = 23;
+		  video.play();
+	
+         }
+		 function trick3() {
+          document.getElementById("pause_id").style.display = "none";
+		  document.getElementById("trick1").style.display = "none";
+	      document.getElementById("trick2").style.display = "none";
+	      document.getElementById("trick3").style.display = "none";
+		  var video = document.getElementById("Video1");
+		  video.currentTime = 28;
+		  video.play();
+
+         }
+		 
+		 ///////////////////////////////////////////
+		 
+		  function trick4() {   
+		  document.getElementById("pause_id").style.display = "none";
+		  document.getElementById("trick4").style.display = "none";
+	      document.getElementById("trick5").style.display = "none";
+	      document.getElementById("trick6").style.display = "none";
+		  document.getElementById("trick7").style.display = "none";
+		  var video = document.getElementById("Video1");
+		  video.currentTime = 93;
+		  video.play();
+         }
+		 
+		  function trick5() {   
+		  document.getElementById("pause_id").style.display = "none";
+		  document.getElementById("trick4").style.display = "none";
+	      document.getElementById("trick5").style.display = "none";
+	      document.getElementById("trick6").style.display = "none";
+		  document.getElementById("trick7").style.display = "none";
+		  var video = document.getElementById("Video1");
+		  video.currentTime = 68;
+		  video.play();
+         }
+		 
+		  function trick6() {     
+		  document.getElementById("pause_id").style.display = "none";
+		  document.getElementById("trick4").style.display = "none";
+	      document.getElementById("trick5").style.display = "none";
+	      document.getElementById("trick6").style.display = "none";
+		  document.getElementById("trick7").style.display = "none";
+		  var video = document.getElementById("Video1");
+		  video.currentTime = 75;
+		  video.play();
+         }
+		 
+		  function trick7() {   
+		  document.getElementById("pause_id").style.display = "none";
+		  document.getElementById("trick4").style.display = "none";
+	      document.getElementById("trick5").style.display = "none";
+	      document.getElementById("trick6").style.display = "none";
+		  document.getElementById("trick7").style.display = "none";
+		  var video = document.getElementById("Video1");
+		  video.currentTime = 82;
+		  video.play();
+         }
+		 
+		//////////////////////////////
+
+		 
+		 function try1() {
+		   document.getElementById("try").style.display = "none";
+           var video = document.getElementById("Video1");
+		   video.currentTime = 10;
+		   video.play();
+         }
+		 
+		 function try2() {
+		   document.getElementById("try2").style.display = "none";
+           var video = document.getElementById("Video1");
+		   video.currentTime = 63;
+		   video.play();
+         }
+		
+	   
+</script>
+</head>
+<body style="background-color:#999;">   
+
+<div id="main" style=" background-color:#333;width:927px; height:377px; padding:10px; background-color:;top:0;bottom: 0;left: 0;right: 0;margin: auto;">
+             
+          <div id="videobar" style="border:0px solid #00F;">
+                  
+                    <div id="play_id" onMouseDown="play_video();" style="position: absolute;cursor:pointer; background-image:url(play.png); background-repeat:no-repeat;cursor:pointer; width:115px; height:40px; margin-left:410px; margin-top:338px; z-index:999999;"></div>
+                    <div id="pause_id" onMouseDown="" style=" display:none;position: absolute;cursor:pointer; background-image:url(pause.png); background-repeat:no-repeat;cursor:pointer; width:115px; height:40px; margin-left:410px; margin-top:338px; z-index:999999;"></div>
+          <!--          ///////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+                    <div id="trick1" onClick="trick1();" style="display:none;cursor:pointer; border:0px solid #F00; width:140px; height:30px;position: absolute;margin-top:170px; margin-left:95px; z-index:9999999;">
+                    </div>
+                    <div id="trick2" onClick="trick2();" style="display:none;cursor:pointer;border:0px solid #F00;width:140px; height:30px;position: absolute;margin-top:280px; margin-left:380px; z-index:9999999;">
+                    </div>
+                    <div id="trick3" onClick="trick3();" style="display:none;cursor:pointer;border:0px solid #F00; width:140px; height:30px;position: absolute;margin-top:185px; margin-left:665px; z-index:9999999;">
+                    </div>
+                   <!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+                    <div id="trick4" onClick="trick4();" style="display:none;cursor:pointer;border:0px solid #F00; width:140px; height:30px;position: absolute;margin-top:170px; margin-left:100px; z-index:9999999;">
+                    </div>
+                    <div id="trick5" onClick="trick5();" style="display:none;cursor:pointer;border:0px solid #F00; width:140px; height:30px;position: absolute;margin-top:180px; margin-left:670px; z-index:9999999;">
+                    </div>
+                    <div id="trick6" onClick="trick6();" style="display:none;cursor:pointer;border:0px solid #F00; width:140px; height:30px;position: absolute;margin-top:290px; margin-left:160px; z-index:9999999;">
+                    </div>
+                    <div id="trick7" onClick="trick7();" style="display:none;cursor:pointer;border:0px solid #F00; width:140px; height:30px;position: absolute;margin-top:290px; margin-left:550px; z-index:9999999;">
+                    </div>
+<!--//////////////////////////////////////////////////////////////////////////////////////////////////-->
+                    <div id="try" onClick="try1();" style=" display:none;cursor:pointer;border:0px solid #F00; width:100px; height:100px;position: absolute;margin-top:160px; margin-left:400px; z-index:9999999;"></div>
+                    <div id="try2" onClick="try2();" style=" display:none;cursor:pointer;border:0px solid #F00; width:100px; height:100px;position: absolute;margin-top:160px; margin-left:400px; z-index:9999999;"></div>
+                    
+<!-- ////////////////////////////////////////////////////////////////////////////////////////////////////      -->             
+                  <video id="Video1" autobuffer poster="img.png" style="width:927px; height:377px; ">
+                    <source src="start.mp4" type="video/mp4" />
+                  </video>
+          </div>
+</div>
+
+</body>
+</html>
